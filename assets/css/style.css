@@ -1,0 +1,149 @@
+:root {
+    /** Colores  */
+    --blanco: #ffffff;
+    --negro: #000000;
+    --aqua: aqua;
+    --pedir: #0bef17;
+    --nuevo: #0b26e4;
+    --detener: #f52d06;
+    /** Extras */
+    --fondo: url(../img/blackjack.jpg);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: var(--fondo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/** Globales */
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+/** Header */
+
+.titulo {
+    text-align: center;
+    background-color: var(--negro);
+    font-size: 2rem;
+    padding: 1.2rem 0;
+    font-weight: 700;
+    width: auto;
+}
+
+.carta {
+    display: inline-block;
+    position: relative;
+    width: 12rem;
+    left: 5rem;
+    margin-left: -5rem;
+    padding-top: 2.2rem;
+}
+
+.jugador,
+.crupier {
+    margin: 0 auto 2rem auto;
+    padding: 1rem 0;
+}
+
+.jugador h1,
+.crupier h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1rem;
+}
+
+#jugador-cartas,
+#crupier-cartas {
+    height: 19rem;
+}
+
+/** Botones */
+
+.btn {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.8rem 0;
+    width: auto;
+    transition: color 0.3s ease;
+    color: var(--blanco);
+}
+
+.btn-juego {
+    background-color: var(--negro);
+    border-color: var(--nuevo);
+}
+
+.btn-juego:hover {
+    background-color: var(--negro);
+    border-color: var(--nuevo);
+    color: var(--nuevo);
+}
+
+.btn-juego:active {
+    background-color: var(--negro);
+    border-color: var(--nuevo);
+    color: var(--nuevo);
+}
+
+.btn-cartas {
+    background-color: var(--negro);
+    border-color: var(--pedir);
+}
+
+.btn-cartas:hover {
+    background-color: var(--negro);
+    border-color: var(--pedir);
+    color: var(--pedir);
+}
+
+.btn-cartas:active {
+    background-color: var(--negro);
+    border-color: var(--pedir);
+    color: var(--pedir);
+}
+
+.btn-plantarse {
+    background-color: var(--negro);
+    border-color: var(--detener);
+}
+
+.btn-plantarse:hover {
+    background-color: var(--negro);
+    border-color: var(--detener);
+    color: var(--detener);
+}
+
+.btn-plantarse:active {
+    background-color: var(--negro);
+    border-color: var(--detener);
+    color: var(--detener);
+}
